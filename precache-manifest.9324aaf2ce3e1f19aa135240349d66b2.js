@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/chalhoub/static/js/runtime~main.46832e29.js"
   },
   {
-    "revision": "44f071b2e76e6d382278",
-    "url": "/chalhoub/static/js/main.44f071b2.chunk.js"
+    "revision": "3ec3c986b92999e45cef",
+    "url": "/chalhoub/static/js/main.3ec3c986.chunk.js"
   },
   {
     "revision": "5d1630978e8a9ac2dfe9",
     "url": "/chalhoub/static/js/2.5d163097.chunk.js"
   },
   {
-    "revision": "44f071b2e76e6d382278",
+    "revision": "3ec3c986b92999e45cef",
     "url": "/chalhoub/static/css/main.26b74b57.chunk.css"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/chalhoub/static/css/2.dd829d13.chunk.css"
   },
   {
-    "revision": "aab84d8210ade8e584504218b6d2dece",
+    "revision": "81b1ceace803b0658de451d1706b13b5",
     "url": "/chalhoub/index.html"
   }
 ];
