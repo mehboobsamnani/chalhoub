@@ -37,7 +37,7 @@ export class News extends Component {
               </div>
               <div className="content">
                 <div className="category">{article.source.name}</div>
-                <h1 className="title">{article.title}</h1>
+                <h1 className="title"><a href={article.url}>{article.title}</a></h1>
                 <div className="description">{article.description}</div>
               </div>
             </div>
