@@ -18,10 +18,10 @@ Getting Started
 The easiest way to get started is to clone the repository:
 ```bash
 # Get the latest snapshot
-git clone https://github.com/mehboobsamnani/chalhoub.git myproject
+git clone https://github.com/mehboobsamnani/chalhoub.git chalhoub
 
 # Change directory
-cd myproject
+cd chalhoub
 
 #install create react app
 npm i create-react-app
@@ -57,18 +57,15 @@ npm run coverage
 Project Structure
 -----------------
 
-| Name                               | Description                                                  |
-| ---------------------------------- | ------------------------------------------------------------ |
-| **src/components**/*             | Contains all of the views.              |
-| **src/actions**/*             | Contains all of the actions.              |
-| **src/reducers**/*             | The data units have been stored into reducers.              |
-| **src/stores**/*             | Combined reducers and store methods.              |
-| **helpers**/*        | Utility methods.             |
-| .eslintrc                          | Rules for eslint linter.                                     |
-| .gitignore                         | Folder and files ignored by git.                             |
-| .travis.yml                        | Configuration files for continuous integration.                |
-| app.js                             | The main component.                                   |
-| index.js                             | Entry point of the application.                                   |
-| package.json                       | NPM dependencies.                                            |
-| package-lock.json                  | Locked versions of NPM dependencies. |
+| Name                               | Description                                          
+------------------------------------------------------------ |
+| **src/components**/*               | Contains all of the views.
+| **helpers**/*                      | Utility methods.
+| .eslintrc                          | Rules for eslint linter.                             
+| .gitignore                         | Folder and files ignored by git.                     
+| .travis.yml                        | Configuration files for continuous integration.      
+| app.js                             | The main component.                                  
+| index.js                           | Entry point of the application.
+| package.json                       | NPM dependencies.                                    | Dockerfile                         | commands for building docker image
+| package-lock.json                  | Locked versions of NPM dependencies.
 
