@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  margin:0;
+}
+/**/
+nav {
+  height: 40px;
+  position: relative;
+  margin-top: 20px;
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+
+	margin-right: 1px;
+}
+
+/*Style for menu links*/
+li a {
+	display:block;
+	min-width:70px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: black;
+	text-decoration: none;
+}
+
+
+
+/*Style for dropdown links*/
+li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: #19c589;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+  float: none;
+  cursor: pointer;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+    z-index:1;
+}
+
+.cf:after {
+  content: ' ';
+  display: block;
+  clear: both;  
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	ul {
+    position: relative;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color:#fff;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+  }
+  /*Hover state for top level links*/
+  li:hover a {
+    background-color: #607d8b66;
+  }
+
+   a:hover {
+    color:#fff;
+  }
+}
+
+/**/
+
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  font-weight: 500;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.module {
+  min-width: 270px;
+  height: 357px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.3s linear 0s;
+  overflow: hidden;
+  position: relative;
+  margin: 10px 0;
+}
+.module:hover {
+  box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+}
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  background: black;
+  height: 200px;
+}
+.thumbnail img {
+  width: 120%;
+  transition: all 0.3s;
+}
+.module:hover .thumbnail img {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+.thumbnail .date {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e74c3c;
+  padding-top: 10px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 100%;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.date div:first-child {
+  font-size: 18px;
+  line-height: 1.2;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 178px;
+  bottom: 0;
+  background: #fff;
+  padding: 30px;
+  transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+.module:hover .content {
+  height: 218px;
+}
+
+.content .category {
+  position: absolute;
+  top: -34px;
+  left: 0;
+  color: #fff;
+  text-transform: uppercase;
+  background: #e74c3c;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+.title {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #333333;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+.description {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.8em;
+  height: 0;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+  overflow: hidden;
+}
+.module:hover .description {
+  height: 100px;
+}
+.row {
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 600px) {
+  .row .column.column-50 {
+    flex:0 1 100%;
+    max-width: 100%;
+    margin:0 auto;
+  }
+}
+
+.cat-name {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.back-link {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  
+}

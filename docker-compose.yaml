@@ -1,0 +1,8 @@
+ frontend:
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./public:/usr/src/app/public
+    command: npm run start
+    build: ./
+    ports:
+      - 3000:3000

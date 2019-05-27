@@ -1,0 +1,3 @@
+*.css
+src/__snapshots__
+src/tests/__snapshots__

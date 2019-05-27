@@ -1,0 +1,14 @@
+{
+    "extends": "airbnb",
+    "env": {
+      "jest": true
+    },
+    "rules": {
+      "indent": 2,
+      "jsx-a11y/href-no-hash" : 0
+    },
+    "globals": {
+       "window": true,
+       "document": true
+    }
+  }
