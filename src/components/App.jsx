@@ -21,8 +21,9 @@ const App = () => (
         atActive={{ opacity: 1 }}
         className="switch-wrapper"
       >
-        <Route exact path="/" component={HomePage} />
         <Route exact path="/category/:id" component={CategoryNews} />
+        <Route exact path="/" component={HomePage} />
+        
       </AnimatedSwitch>
     </Router>
   </div>

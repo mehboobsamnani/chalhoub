@@ -44,7 +44,7 @@ export class HomePage extends Component {
                     {categories.map((v, i) => {
                     return (
                       <li key={ i }>
-                        <Link to={`category/${v}`}>{v.toUpperCase()}</Link>
+                        <Link to={`/category/${v}`}>{v.toUpperCase()}</Link>
                       </li>
                     )})
                     }

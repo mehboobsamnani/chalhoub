@@ -7,6 +7,7 @@ export function fetchHeadlines() {
   return new Promise((resolve, reject) => {
     if (!navigator.onLine) {
       resolve(JSON.parse(localStorage.getItem('fetchHeadlines')));
+      return;
     }
     axios.get('https://newsapi.org/v2/top-headlines?country=us')
       .then((response) => {
@@ -23,6 +24,7 @@ export function fetchNews(category) {
   return new Promise((resolve, reject) => {
     if (!navigator.onLine) {
       resolve(JSON.parse(localStorage.getItem('fetchNews')));
+      return;
     }
     axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=${category}`)
       .then((response) => {
