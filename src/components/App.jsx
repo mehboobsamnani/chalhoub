@@ -22,7 +22,7 @@ const App = () => (
         className="switch-wrapper"
       >
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/:id" component={CategoryNews} />
+        <Route exact path="/category/:id" component={CategoryNews} />
       </AnimatedSwitch>
     </Router>
   </div>
