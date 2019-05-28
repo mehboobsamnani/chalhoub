@@ -18,13 +18,10 @@ Getting Started
 The easiest way to get started is to clone the repository:
 ```bash
 # Get the latest snapshot
-git clone https://github.com/mehboobsamnani/chalhoub.git chalhoub
+git clone https://github.com/mehboobsamnani/chalhoub.git chalhoub-master
 
 # Change directory
-cd chalhoub
-
-#install create react app
-npm i create-react-app
+cd chalhoub-master
 
 # Install NPM dependencies
 npm install
